@@ -1,0 +1,40 @@
+<!-- activity_music_story.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicStoryActivity">
+
+    <!-- Title for the music story screen -->
+    <TextView
+        android:id="@+id/storyTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DAVID KUSHNER, DAYLIGHT LYRICS: THE MEANING AND INSPIRATION BEHIND THE SONG"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Paragraph detailing the news -->
+    <TextView
+        android:id="@+id/storyDetailsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/storyTitleTextView"
+        android:layout_marginTop="16dp"
+        android:text="Kushner’s songwriting prowess shines through in the Daylight lyrics. The song is a profound exploration of paradoxical desire, as echoed in the lines, “You and I drink the poison from the same vine, Oh I love it and I hate it at the same time“. This captures the idea of longing for something that is simultaneously harmful, a concept that resonates with many listeners.\n\nThe song’s narrative is deeply rooted in biblical allusions, inspired by Paul the Apostle’s teachings about overcoming “evil forces”. Kushner perceives “darkness” as a ubiquitous concept representing the “worst version of ourselves“, and this forms a core part of the song’s thematic essence.\n\nHe says:\n\nI would want to do things that would lead to darkness, but also want to be in the light. Those are real things. We all go through darkness, and we all have brighter moments, too. [This song] speaks from my own life experiences. To me, it’s a realization of my own desires and the complexity of those desires. The desire for light, but always running towards the darkness instead of light."/>
+
+    <!-- ImageView for the image -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/storyDetailsTextView"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/david" />
+
+    <!-- Add ImageView and other elements as needed for the image -->
+
+</RelativeLayout>

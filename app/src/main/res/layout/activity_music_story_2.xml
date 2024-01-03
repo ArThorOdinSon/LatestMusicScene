@@ -1,0 +1,38 @@
+    <!-- activity_music_story_2.xml -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicStoryActivity">
+
+    <!-- Title for the music story screen -->
+    <TextView
+        android:id="@+id/storyTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exploring the Meaning of “Outside” by Calvin Harris"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Paragraph detailing the news -->
+    <TextView
+        android:id="@+id/storyDetailsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="“Outside” can be best described as an emotionally charged EDM anthem that skillfully explores the intricate dynamics of human relationships. The song opens with a mesmerizing electronic melody that sets the stage for the poignant narrative that unfolds. Calvin Harris, known for his ability to infuse deep emotions into his music, weaves a tale of heartache and longing, making it an instant favorite among EDM enthusiasts and pop music lovers alike.\n\nThe lyrics of “Outside” delve into the familiar theme of love and heartbreak. The song revolves around the idea of feeling emotionally distant from a loved one, despite physical proximity. It delves into the vulnerability of being in a relationship where one is unable to bridge the emotional chasm that has developed, making it a relatable and soul-stirring track for many."
+        android:layout_below="@id/storyTitleTextView"
+        android:layout_marginTop="16dp"/>
+
+    <!-- ImageView for the image -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/storyDetailsTextView"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/calvin" />
+
+</RelativeLayout>
